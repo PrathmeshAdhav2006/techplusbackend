@@ -1,3 +1,12 @@
 spring:
   application:
     name: techplusbackend
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+
+news:
+  api:
+    api-key: ${NEWS_API_KEY}
+    base-url: ${NEWS_API_BASE_URL:https://api.newsmesh.co/v1/trending}
+    limit: ${NEWS_API_LIMIT:2}
